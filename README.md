@@ -9,5 +9,5 @@ PEMDAS calculator app implementing my own alternative to the notorious eval() fu
 ### Built with
 
 - HTML5
-- SCSS (Flexbox, CSS Grid, CSS custom properties)
-- JS
+- CSS (Flexbox, CSS Grid, CSS custom properties)
+- REACT
