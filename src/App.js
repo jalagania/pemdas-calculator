@@ -28,7 +28,7 @@ function App() {
       newStr = newStr.slice(0, str.length - 1);
     }
 
-    const numbers = newStr.split(/\+|\-|\×|\÷/);
+    const numbers = newStr.split(/\+|-|×|÷/);
     const symbols = newStr.split(/\d|\./).filter((sign) => sign !== "");
     let operation = numbers.map((num) => Number(num));
     for (let i = 0; i < symbols.length; i++) {
@@ -101,8 +101,8 @@ function App() {
 
   // Prevents Typing More Than One Dot
   function dotIsAllowed(str) {
-    if (str.search(/\+|\-|\×|\÷/) !== -1) {
-      const myArray = str.split(/\+|\-|\×|\÷/);
+    if (str.search(/\+|-|×|÷/) !== -1) {
+      const myArray = str.split(/\+|-|×|÷/);
       if (myArray[myArray.length - 1].includes(".")) {
         return false;
       }
@@ -115,8 +115,8 @@ function App() {
   // Prevents Typing Number After Zero
   function numberIsAllowed(str) {
     let myString = str;
-    if (str.search(/\+|\-|\×|\÷/) !== -1) {
-      const myArray = str.split(/\+|\-|\×|\÷/);
+    if (str.search(/\+|-|×|÷/) !== -1) {
+      const myArray = str.split(/\+|-|×|÷/);
       myString = myArray[myArray.length - 1];
       if (myString.startsWith("0") && myString[1] !== ".") {
         return false;
@@ -179,11 +179,7 @@ function App() {
   }
 
   function handleEqualClick() {
-    if (
-      !equalWasPressed &&
-      input.match(/\+|\-|\×|\÷/) &&
-      endsWithNumber(input)
-    ) {
+    if (!equalWasPressed && input.match(/\+|-|×|÷/) && endsWithNumber(input)) {
       setInput(output);
       setOutput("");
       setEqualWasPressed(true);
