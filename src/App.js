@@ -15,7 +15,7 @@ function App() {
 
   // Calculates String (PEMDAS)
   function calcStr(str) {
-    if (str === "") {
+    if (str === "" || str === ".") {
       return "";
     }
 
@@ -134,7 +134,7 @@ function App() {
       setOutput(calcStr(input));
     }
     reduceFontSize();
-  }, [input]);
+  }, [input, equalWasPressed]);
 
   function handleNumberClick(event) {
     if (equalWasPressed) {
