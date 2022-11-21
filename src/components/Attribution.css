@@ -1,0 +1,12 @@
+.attribution {
+  font-size: 1.5rem;
+  color: var(--attribution);
+}
+.attribution a:link,
+.attribution a:visited {
+  color: var(--key-bg3-toggle);
+  text-decoration: none;
+}
+.attribution a:hover {
+  text-decoration: underline;
+}

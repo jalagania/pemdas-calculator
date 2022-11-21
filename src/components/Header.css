@@ -1,0 +1,78 @@
+.heading {
+  font-weight: 500;
+  color: var(--screen);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.calc-name {
+  font-size: 2.5rem;
+}
+.calc-name span {
+  text-transform: uppercase;
+  font-style: italic;
+  margin-right: 1rem;
+}
+
+.theme-switcher {
+  font-size: 2rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+
+.theme {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.theme-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.theme-btn {
+  color: inherit;
+  padding: 1px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.theme-btn:hover {
+  color: var(--key-bg3-toggle);
+}
+.theme-btn:active {
+  transform: scale(0.99) translate(0px, 1px);
+}
+
+.switcher-bg {
+  width: 6rem;
+  height: 1.8rem;
+  background-color: var(--keypad-toggle-bg);
+  border-radius: 5rem;
+  position: relative;
+}
+
+.circle {
+  width: 1.3rem;
+  height: 1.3rem;
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: var(--key-bg3-toggle);
+  transition: all 0.3s;
+}
+
+.middle {
+  left: 40%;
+}
+
+.right {
+  left: 72%;
+}

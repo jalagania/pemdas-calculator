@@ -1,0 +1,34 @@
+.display {
+  margin: 1.5rem 0 1.3rem 0;
+  width: 40rem;
+  height: 11rem;
+  padding: 2rem;
+  color: var(--screen);
+  background-color: var(--screen-bg);
+  text-align: right;
+  border-radius: 5px;
+}
+
+.input-field {
+  font-size: 4.5rem;
+  font-weight: 500;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.input-field::-webkit-scrollbar {
+  height: 0.9rem;
+}
+.input-field::-webkit-scrollbar-thumb {
+  background-color: var(--key-bg3-toggle);
+  border-radius: 5rem;
+}
+
+.output {
+  height: 2.5rem;
+  font-size: 2rem;
+  color: var(--output);
+}
+
+.smaller-font {
+  font-size: 3.5rem;
+}

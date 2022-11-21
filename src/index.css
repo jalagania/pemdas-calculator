@@ -1,13 +1,93 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --main-bg: hsl(222, 26%, 31%);
+  --keypad-toggle-bg: hsl(223, 31%, 20%);
+  --screen-bg: hsl(224, 36%, 15%);
+  --key-bg-main: hsl(30, 25%, 89%);
+  --key-shadow-main: hsl(28, 16%, 65%);
+  --key-bg2: hsl(225, 21%, 49%);
+  --key-shadow2: hsl(224, 28%, 35%);
+  --key-bg3-toggle: hsl(6, 63%, 50%);
+  --key-shadow3: hsl(6, 70%, 34%);
+  --main-text: hsl(221, 14%, 31%);
+  --screen: hsl(0, 0%, 100%);
+  --output: rgba(255, 255, 255, 0.4);
+  --white-color: hsl(0, 0%, 100%);
+  --equal-sign: hsl(0, 0%, 100%);
+  --attribution: hsl(0, 0%, 100%);
+  --hover1: #c7b5a3;
+  --hover-bg1: #988370;
+  --hover2: #545f80;
+  --hover-bg2: #364260;
+  --hover3: #b03527;
+  --hover-bg3: #7c2016;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+@media (max-width: 28.75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.white-theme {
+  --main-bg: rgb(230, 230, 230);
+  --keypad-toggle-bg: hsl(0, 5%, 81%);
+  --screen-bg: hsl(0, 0%, 93%);
+  --key-bg-main: hsl(45, 7%, 89%);
+  --key-shadow-main: hsl(35, 11%, 61%);
+  --key-bg2: hsl(185, 42%, 37%);
+  --key-shadow2: hsl(185, 58%, 25%);
+  --key-bg3-toggle: hsl(25, 98%, 40%);
+  --key-shadow3: hsl(25, 99%, 27%);
+  --main-text: hsl(60, 10%, 19%);
+  --screen: hsl(60, 9%, 19%);
+  --output: rgba(53, 53, 44, 0.5);
+  --white-color: hsl(0, 0%, 100%);
+  --equal-sign: hsl(0, 0%, 100%);
+  --attribution: hsl(185, 58%, 25%);
+  --hover1: #c5c3bc;
+  --hover-bg1: #918677;
+  --hover2: #2e6b71;
+  --hover-bg2: #165055;
+  --hover3: #ab4801;
+  --hover-bg3: #743000;
+}
+
+.purple-theme {
+  --main-bg: hsl(268, 75%, 9%);
+  --keypad-toggle-bg: hsl(268, 71%, 12%);
+  --screen-bg: hsl(268, 71%, 12%);
+  --key-bg-main: hsl(268, 47%, 21%);
+  --key-shadow-main: hsl(290, 70%, 36%);
+  --key-bg2: hsl(281, 89%, 26%);
+  --key-shadow2: hsl(285, 91%, 52%);
+  --key-bg3-toggle: hsl(176, 100%, 44%);
+  --key-shadow3: hsl(177, 92%, 70%);
+  --main-text: hsl(52, 100%, 62%);
+  --screen: hsl(52, 100%, 62%);
+  --output: rgba(255, 229, 61, 0.5);
+  --white-color: hsl(0, 0%, 100%);
+  --equal-sign: hsl(198, 20%, 13%);
+  --attribution: hsl(52, 100%, 62%);
+  --hover1: #512b7b;
+  --hover-bg1: #b625d3;
+  --hover2: #7109a0;
+  --hover-bg2: #c22cf5;
+  --hover3: #00beb1;
+  --hover-bg3: #38f6ed;
 }
